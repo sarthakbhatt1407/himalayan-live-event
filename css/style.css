@@ -526,3 +526,47 @@ body::-webkit-scrollbar {
   width: 90%;
   margin: 0 auto;
 }
+
+#contact {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.contactTextDiv {
+  display: flex;
+  height: 30vh;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.contactTextHead {
+  color: #fecc17ce;
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.113);
+}
+.contactTextHead span:last-child {
+  margin-top: -0.5rem;
+}
+.contactTextPerson {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  padding-right: 1rem;
+}
+.contactTextPerson p {
+  color: black;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  margin-bottom: -0.1rem;
+}
+.contactTextPerson span {
+  color: black;
+  font-size: 1.2rem;
+}
