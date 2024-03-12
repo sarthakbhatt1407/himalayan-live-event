@@ -283,3 +283,49 @@ body::-webkit-scrollbar {
 .discussion3 img {
   width: 20rem;
 }
+
+#speakers {
+  background-color: #fbf5ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.speakersDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  gap: 2rem;
+}
+.speakersDiv h2 {
+  color: #fecc17;
+  font-size: 2.5rem;
+}
+.speakersCardDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.speakersCard {
+  box-shadow: 0.1rem 0.1rem 0.6rem rgb(221, 221, 221);
+  width: 17rem;
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.speakersCard img {
+  width: 100%;
+}
+.speakersCard p {
+  font-weight: bold;
+  color: #fecc17;
+}
