@@ -202,6 +202,7 @@ body::-webkit-scrollbar {
   align-items: center;
   gap: 3rem;
   padding: 2rem 0;
+  margin: 2rem;
 }
 .records div {
   border-right: 2px solid rgba(0, 0, 0, 0.113);
@@ -420,6 +421,9 @@ body::-webkit-scrollbar {
   padding: 1rem 0;
   border-bottom: 2px solid rgba(0, 0, 0, 0.113);
 }
+.eventDiv:last-child {
+  border: none;
+}
 .timeDiv {
   color: black;
   font-size: 1.1rem;
@@ -462,4 +466,63 @@ body::-webkit-scrollbar {
   color: rgba(0, 0, 0, 0.646);
   margin-top: -1rem;
   width: 8dvi;
+}
+
+.afterAgenda {
+  background: url("../assests/afterspeaker.jpg") no-repeat 0 0;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.3rem;
+  font-weight: 500;
+  padding: 4rem;
+  height: fit-content;
+  text-align: center;
+}
+
+.afterAgendaDiv {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.afterAgendaDiv h2 {
+  font-size: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  align-items: start;
+  width: 40%;
+  border-right: 2px solid rgba(0, 0, 0, 0.113);
+}
+.afterAgendaDiv ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.2rem;
+  gap: 1rem;
+  width: fit-content;
+  margin-left: 2rem;
+}
+.afterAgendaDiv ul li {
+  width: 70%;
+}
+.faq {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+.faq h2 {
+  color: #fecc17;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+}
+.faq div {
+  width: 90%;
+  margin: 0 auto;
 }
