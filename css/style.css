@@ -400,3 +400,66 @@ body::-webkit-scrollbar {
 .partnerDiv4 img:hover {
   transform: scale(1.2);
 }
+
+#agenda {
+  display: flex;
+  padding: 2rem 0;
+  flex-direction: column;
+}
+#agenda h2 {
+  color: #fecc17;
+  font-weight: bold;
+  text-align: center;
+}
+
+.eventDiv {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.113);
+}
+.timeDiv {
+  color: black;
+  font-size: 1.1rem;
+}
+
+.eventParaCard {
+  display: flex;
+  flex-direction: column;
+}
+.eventParaCard p {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.eventCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+}
+.eventCardDiv {
+  display: flex;
+  gap: 1rem;
+}
+.eventCardDiv img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.4rem;
+}
+.eventCardText {
+  display: flex;
+  flex-direction: column;
+}
+.eventCardText p {
+  color: black;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.eventCardText span {
+  color: rgba(0, 0, 0, 0.646);
+  margin-top: -1rem;
+  width: 8dvi;
+}
