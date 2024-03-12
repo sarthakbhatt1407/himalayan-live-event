@@ -329,3 +329,74 @@ body::-webkit-scrollbar {
   font-weight: bold;
   color: #fecc17;
 }
+
+.afterSpeaker {
+  background: url("../assests/afterspeaker.jpg") no-repeat 0 0;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.3rem;
+  font-weight: 500;
+  padding: 4rem;
+  height: 70vh;
+  text-align: center;
+}
+.afterSpeaker div {
+  width: 80%;
+}
+.partner {
+  padding: 4rem 0;
+}
+.partnerDiv {
+  display: flex;
+  align-items: start;
+}
+
+.partnerDiv2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.partnerDiv2 h2 {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+}
+.partnerDiv2Heading1 {
+  color: #fecc17;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.partnerDiv2Heading2 {
+  color: black;
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+
+.partnerDiv3 {
+  background-color: #fecc17;
+  width: 22%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.partnerDiv3 ul {
+  height: 100%;
+  font-size: 1.5rem;
+}
+.partnerDiv4 {
+  overflow: hidden;
+  margin-top: 3rem;
+}
+.partnerDiv4 img {
+  transition: all 0.3s;
+}
+.partnerDiv4 img:hover {
+  transform: scale(1.2);
+}
