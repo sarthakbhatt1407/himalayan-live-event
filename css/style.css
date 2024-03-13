@@ -620,6 +620,7 @@ body::-webkit-scrollbar {
   }
 
   .bannerLeft {
+    border: none;
     padding: 0;
   }
   .bannerLeftHeading {
