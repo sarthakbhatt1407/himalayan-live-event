@@ -5,7 +5,7 @@
 }
 body {
   position: relative;
-  overflow-x: hidden;
+
   scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
@@ -581,9 +581,10 @@ body::-webkit-scrollbar {
 @media only screen and (max-width: 700px) {
   .header {
     display: none;
+    overflow: scroll;
   }
   body {
-    width: 100vw;
+    height: 100vh;
   }
   .banner {
     width: 100%;
@@ -927,44 +928,48 @@ body::-webkit-scrollbar {
   }
   .partnerDiv {
     display: flex;
-    align-items: start;
+    align-items: center;
     flex-direction: column;
     position: relative;
+    gap: 1rem;
   }
 
-  .partnerDiv img {
-    /* position: absolute;
+  .partnerDivFistImg {
+    position: absolute;
     z-index: -1;
     top: 0;
-    left: 0; */
+    left: 0;
+    width: 15rem;
   }
 
   .partnerDiv2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
   }
   .partnerDiv2 h2 {
     display: flex;
     flex-direction: column;
-    padding-right: 2rem;
+    padding-right: 0rem;
+    text-align: center;
   }
   .partnerDiv2Heading1 {
     color: #fecc17;
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
   }
   .partnerDiv2Heading2 {
     color: black;
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     font-weight: bolder;
   }
 
   .partnerDiv3 {
     background-color: #fecc17;
-    width: 22%;
+    width: 90%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -976,10 +981,13 @@ body::-webkit-scrollbar {
   }
   .partnerDiv4 {
     overflow: hidden;
-    margin-top: 3rem;
+    margin-top: 0rem;
+    width: 90%;
+    margin: 0 auto;
   }
   .partnerDiv4 img {
     transition: all 0.3s;
+    width: 100%;
   }
   .partnerDiv4 img:hover {
     transform: scale(1.2);
@@ -1001,11 +1009,11 @@ body::-webkit-scrollbar {
 
   .eventDiv {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
-    width: 70%;
+    width: 90%;
     margin: 1rem auto;
-
+    text-align: center;
     padding: 1rem 0;
     border-bottom: 2px solid rgba(0, 0, 0, 0.113);
   }
@@ -1106,6 +1114,8 @@ body::-webkit-scrollbar {
     flex-direction: column;
     padding: 2rem 0;
     gap: 2rem;
+    margin-top: 2rem;
+    background-color: red;
   }
   .faq h2 {
     color: #fecc17;
@@ -1121,13 +1131,25 @@ body::-webkit-scrollbar {
   #contact {
     display: flex;
     gap: 2rem;
+    flex-direction: column;
     align-items: center;
     padding: 2rem 0;
+    position: relative;
+    height: 70vh;
+    margin-top: 25rem;
+  }
+  #contact img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 7rem;
+    z-index: -1;
   }
 
   .contactTextDiv {
     display: flex;
     height: 30vh;
+    flex-direction: column;
     gap: 3rem;
     padding: 1rem;
   }
@@ -1136,7 +1158,7 @@ body::-webkit-scrollbar {
     color: #fecc17ce;
     font-weight: bold;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     display: flex;
     flex-direction: column;
     border-bottom: 2px solid rgba(0, 0, 0, 0.113);
