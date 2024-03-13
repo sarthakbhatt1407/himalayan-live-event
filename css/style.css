@@ -577,3 +577,588 @@ body::-webkit-scrollbar {
   color: black;
   font-size: 1.2rem;
 }
+
+@media only screen and (max-width: 700px) {
+  .header {
+    display: none;
+  }
+  body {
+    width: 100vw;
+  }
+  .banner {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .banner::before {
+    content: "";
+    background: url("../assests/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .bannerMainDiv {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0rem;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .bannerLeft {
+    padding: 0;
+  }
+  .bannerLeftHeading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 1.8rem;
+    letter-spacing: 0.09rem;
+  }
+
+  .bannerLeftHeading2 {
+    color: #fecc17;
+    font-weight: bolder;
+  }
+
+  .bannerLeftPara {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #000000d2;
+    text-transform: uppercase;
+  }
+  .lastPara {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .stayTuned {
+    border: 1px solid black;
+    padding: 0.8rem 0.4rem;
+    border-radius: 0.6rem;
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+    font-size: 0.9rem;
+    margin: 0 auto;
+  }
+
+  .bannerRight {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .bannerRight img {
+    width: 8rem;
+  }
+  .bannerRight button {
+    border: 1px solid black;
+    background-color: white;
+
+    padding: 0.2rem 0.8rem;
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.5s;
+    text-transform: uppercase;
+  }
+  .bannerRight button:hover {
+    color: white;
+    background-color: black;
+  }
+
+  /* OverView */
+
+  #overview {
+    padding: 2rem 0;
+    margin: 2rem 0;
+  }
+  .overviewMainDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0rem;
+    position: relative;
+    padding: 0 1rem;
+  }
+  .overview1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .overview1 img {
+    width: 8rem;
+  }
+
+  .overview2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .overview2 h2 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0rem;
+    padding-left: 2rem;
+    border-right: none;
+  }
+  .overview2Heading1 {
+    color: #fecc17;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  .overview2Heading2 {
+    color: black;
+    font-size: 2.2rem;
+    font-weight: bolder;
+  }
+  .overview2 img {
+    width: 7rem;
+    opacity: 0.6;
+    margin: 0 auto;
+  }
+  .overview3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .overview3 p {
+    color: black;
+    font-size: 1.05rem;
+    padding-top: 0rem;
+    font-weight: 400;
+  }
+  .overview3 button {
+    width: 30%;
+    border: none;
+    padding: 0.2rem 0;
+  }
+
+  .records {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+    padding: 0;
+    margin: 2rem 0;
+  }
+  .records div {
+    border-right: none;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+  }
+
+  .records h2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    gap: 1rem;
+    font-size: 1.7rem;
+  }
+
+  .recordsHeading1 {
+    font-size: 2rem;
+  }
+
+  #discussion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .discussion1 {
+    background-color: #fecc17;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: fit-content;
+  }
+
+  .discussion1 h2 {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 1.9rem;
+  }
+  .discussion1 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+  }
+  .discussion1 ul li {
+    font-size: 1.1rem;
+  }
+
+  .discussion2 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .discussion2firstImg {
+    display: none;
+  }
+  .discussion2 {
+    width: 100%;
+  }
+  .discussion2 div {
+    background-color: #e7ecef;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.1rem;
+    gap: 1rem;
+  }
+  .discussion3 {
+    width: 100%;
+  }
+  .discussion3 img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #speakers {
+    background-color: #fbf5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .speakersDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+    gap: 2rem;
+  }
+  .speakersDiv h2 {
+    color: #fecc17;
+    font-size: 2.5rem;
+  }
+  .speakersCardDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  .speakersCard {
+    box-shadow: 0.1rem 0.1rem 0.6rem rgb(221, 221, 221);
+    width: 17rem;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .speakersCard img {
+    width: 100%;
+  }
+  .speakersCard p {
+    font-weight: bold;
+    color: #fecc17;
+  }
+
+  .afterSpeaker {
+    background: url("../assests/afterspeaker.jpg") no-repeat 0 0;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 4rem 1rem;
+    height: fit-content;
+  }
+  .afterSpeaker div {
+    width: 100%;
+    text-justify: inter-word;
+  }
+  .partner {
+    padding: 4rem 0;
+  }
+  .partnerDiv {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .partnerDiv img {
+    /* position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0; */
+  }
+
+  .partnerDiv2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .partnerDiv2 h2 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+  }
+  .partnerDiv2Heading1 {
+    color: #fecc17;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  .partnerDiv2Heading2 {
+    color: black;
+    font-size: 3.5rem;
+    font-weight: bolder;
+  }
+
+  .partnerDiv3 {
+    background-color: #fecc17;
+    width: 22%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .partnerDiv3 ul {
+    height: 100%;
+    font-size: 1rem;
+  }
+  .partnerDiv4 {
+    overflow: hidden;
+    margin-top: 3rem;
+  }
+  .partnerDiv4 img {
+    transition: all 0.3s;
+  }
+  .partnerDiv4 img:hover {
+    transform: scale(1.2);
+  }
+
+  #agenda {
+    display: flex;
+    padding: 2rem 0;
+    flex-direction: column;
+
+    height: 80vh;
+  }
+  #agenda h2 {
+    color: #fecc17;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .eventDiv {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    width: 70%;
+    margin: 1rem auto;
+
+    padding: 1rem 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.113);
+  }
+  .eventDiv:last-child {
+    border: none;
+  }
+  .timeDiv {
+    color: black;
+    font-size: 1.1rem;
+  }
+
+  .eventParaCard {
+    display: flex;
+    flex-direction: column;
+  }
+  .eventParaCard p {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .eventCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+  }
+  .eventCardDiv {
+    display: flex;
+    gap: 1rem;
+  }
+  .eventCardDiv img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.4rem;
+  }
+  .eventCardText {
+    display: flex;
+    flex-direction: column;
+  }
+  .eventCardText p {
+    color: black;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .eventCardText span {
+    color: rgba(0, 0, 0, 0.646);
+    margin-top: -1rem;
+    /* width: 8dvi; */
+  }
+
+  .afterAgenda {
+    margin-top: 2rem;
+    background: url("../assests/afterspeaker.jpg") no-repeat 0 0;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 2rem;
+    height: fit-content;
+  }
+
+  .afterAgendaDiv {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+  .afterAgendaDiv h2 {
+    font-size: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    align-items: start;
+    width: 100%;
+    text-align: start;
+    border-right: none;
+  }
+  .afterAgendaDiv ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1.2rem;
+    gap: 1rem;
+    width: 100%;
+    margin-left: 2rem;
+    text-align: start;
+  }
+  .afterAgendaDiv ul li {
+    width: 90%;
+  }
+  .faq {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    gap: 2rem;
+  }
+  .faq h2 {
+    color: #fecc17;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .faq div {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #contact {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  .contactTextDiv {
+    display: flex;
+    height: 30vh;
+    gap: 3rem;
+    padding: 1rem;
+  }
+
+  .contactTextHead {
+    color: #fecc17ce;
+    font-weight: bold;
+    font-weight: bold;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.113);
+  }
+  .contactTextHead span:last-child {
+    margin-top: -0.5rem;
+  }
+  .contactTextPerson {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    padding-right: 1rem;
+  }
+  .contactTextPerson p {
+    color: black;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    margin-bottom: -0.1rem;
+  }
+  .contactTextPerson span {
+    color: black;
+    font-size: 1.2rem;
+  }
+}
