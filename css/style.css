@@ -15,8 +15,17 @@ body::-webkit-scrollbar {
 .header {
   position: sticky;
   top: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: #f7f7f7;
   z-index: 100;
+}
+.logobox img {
+  width: 6.4rem;
+}
+.logobox {
+  padding: 0 1rem;
+}
+.mobilenav {
+  display: none;
 }
 
 .eventNav {
@@ -582,7 +591,14 @@ body::-webkit-scrollbar {
   .header {
     display: none;
     overflow: scroll;
+    position: relative;
   }
+  .mobilenav {
+    display: block;
+    background-color: white;
+    height: 30vh;
+  }
+
   body {
     height: 100vh;
   }
