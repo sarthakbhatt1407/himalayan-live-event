@@ -964,12 +964,14 @@ body::-webkit-scrollbar {
   .afterSpeaker div {
     width: 100%;
     text-justify: inter-word;
+    gap: 1rem;
   }
   .afterSpeaker div h2 {
     color: black;
-    background-color: red;
+    font-size: 2rem;
   }
   .afterSpeaker div p {
+    font-size: 1rem;
   }
   .partner {
     padding: 4rem 0;
