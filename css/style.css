@@ -112,7 +112,14 @@ body::-webkit-scrollbar {
   font-size: 1.6rem;
   font-weight: bold;
 }
-
+.bannerRight img {
+  width: 20rem;
+}
+.bannerRight {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 .stayTuned {
   border: 1px solid black;
   padding: 0.8rem;
@@ -1204,5 +1211,13 @@ body::-webkit-scrollbar {
   .contactTextPerson span {
     color: black;
     font-size: 1.2rem;
+  }
+  .bannerRight img {
+    width: 20rem;
+  }
+  .bannerRight {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 }
