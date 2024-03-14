@@ -355,15 +355,29 @@ body::-webkit-scrollbar {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 2.3rem;
-  font-weight: 500;
+  align-items: start;
   padding: 4rem;
-  height: 70vh;
-  text-align: center;
+  height: fit-content;
 }
 .afterSpeaker div {
-  width: 80%;
+  width: 100%;
+  text-justify: inter-word;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.afterSpeaker div h2 {
+  color: black;
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.afterSpeaker div p {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 .partner {
   padding: 4rem 0;
@@ -943,14 +957,19 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.3rem;
-    font-weight: 500;
+
     padding: 4rem 1rem;
     height: fit-content;
   }
   .afterSpeaker div {
     width: 100%;
     text-justify: inter-word;
+  }
+  .afterSpeaker div h2 {
+    color: black;
+    background-color: red;
+  }
+  .afterSpeaker div p {
   }
   .partner {
     padding: 4rem 0;
@@ -1219,8 +1238,5 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-  }
-  .logobox img {
-    width: 25rem;
   }
 }
