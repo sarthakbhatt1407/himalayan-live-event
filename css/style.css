@@ -218,7 +218,8 @@ body::-webkit-scrollbar {
   align-items: center;
   gap: 3rem;
   padding: 2rem 0;
-  margin: 2rem;
+
+  height: 70vh;
 }
 .records div {
   border-right: 2px solid rgba(0, 0, 0, 0.113);
