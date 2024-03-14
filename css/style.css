@@ -1220,4 +1220,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     gap: 2rem;
   }
+  .logobox img {
+    width: 25rem;
+  }
 }
