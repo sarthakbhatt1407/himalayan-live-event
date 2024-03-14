@@ -594,9 +594,14 @@ body::-webkit-scrollbar {
     position: relative;
   }
   .mobilenav {
+    height: fit-content;
     display: block;
-    background-color: white;
-    height: 30vh;
+    background-color: #f7f7f7;
+  }
+  .mobilenav img {
+    width: 10rem;
+    margin: 0 auto;
+    display: block;
   }
 
   body {
